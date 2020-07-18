@@ -1,0 +1,19 @@
+class Member
+  attr_accessor :name, :power, :bio 
+  @@all = []
+  
+  def initialize(prop)
+    @name = prop[:name]
+    @power = prop[:power]
+    @bio = prop[:bio]
+    @@all << self 
+  end 
+  
+  def self.all 
+    @@all 
+  end 
+  
+  def self.clear 
+    @@all.clear 
+  end
+end
