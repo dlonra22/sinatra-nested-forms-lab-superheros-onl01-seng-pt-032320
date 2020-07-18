@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require_relative 'app/models/member'
+require_relative 'app/models/team'
 class App < Sinatra::Base
 
     set :views, Proc.new { File.join(root, "../views/") }
